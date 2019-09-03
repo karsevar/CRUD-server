@@ -1,16 +1,8 @@
-// see a list of pre-populated movies
-// add a movie to the list 
-// change or update movie information 
-// remove a movie 
-// see only released movies 
+// CommonJS imports from relative file:
+const server = require('./server.js')
 
-const express = require('express');
-
-const server = express();
-
-server.get('/', (req, res) => {
-    res.status(200).json({api: '...api'})
-});
+// named imports with commonjs
+// const {server, moreStuff, moremoreStuff} = require('./server.js');
 
 const port = 6000;
 
